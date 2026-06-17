@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Star Hunt ⭐</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- หน้าเริ่มเกม -->
+<div id="startScreen">
+
+    <div class="moon"></div>
+
+    <h1>🌕 Star Hunt</h1>
+
+    <button id="startBtn">
+        Tap To Start
+    </button>
+
+</div>
+
+<!-- พื้นหลัง -->
+<div id="gameWorld">
+
+    <div id="starsBg"></div>
+
+    <div class="moon-large"></div>
+
+    <div class="mountain m1"></div>
+    <div class="mountain m2"></div>
+    <div class="mountain m3"></div>
+
+</div>
+
+<!-- HUD -->
+<div id="hud">
+
+    <div id="score">
+        ⭐ <span id="starCount">0</span>/10
+    </div>
+
+    <button id="albumBtn">
+        📔
+    </button>
+<div id="mission">
+🌕 ตามหาดาวทั้ง 10 ดวง
+</div>
+<div id="moonBar">
+<div id="moonFill"></div>
+</div>
+</div>
+
+
+
+<!-- ดาว -->
+<div id="starContainer"></div>
+
+<!-- Popup รูป/วิดีโอ -->
+<div id="rewardPopup">
+
+    <div class="rewardCard">
+
+        <img id="rewardImage">
+
+        <video
+            id="rewardVideo"
+            playsinline
+            muted
+            controls>
+        </video>
+
+    </div>
+
+</div>
+
+<!-- Album -->
+<div id="albumScreen">
+
+    <h2>Collection</h2>
+
+    <div id="albumGrid"></div>
+
+    <button id="closeAlbum">
+        Close
+    </button>
+
+</div>
+
+<!-- Ending -->
+<div id="endingScreen">
+
+    <h1>🌷</h1>
+
+    <div id="memoryWall"></div>
+
+    <button onclick="location.reload()">
+        Replay
+    </button>
+
+</div>
+
+<!-- เพลง -->
+<audio id="bgMusic" loop>
+    <source src="music/เพลงรักเพลงแรก.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
+
